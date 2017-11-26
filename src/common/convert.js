@@ -9,6 +9,5 @@ const decode = require('parse-entities');
  */
 module.exports = function (body, from = 'win1251') {
   const buffer = Buffer.from(body, 'binary');
-
-  return iconv.decode(buffer, from);
+  return decode(iconv.decode(buffer, from));
 };
