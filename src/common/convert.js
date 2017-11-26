@@ -1,5 +1,5 @@
 const iconv = require('iconv-lite');
-
+const decode = require('parse-entities');
 /**
  * Convert from one encoding to another one.
  *
